@@ -7,7 +7,7 @@ return {
       local lint = require 'lint'
       -- Configure linters
       lint.linters_by_ft = {
-        python = { 'ruff', 'mypy' },
+        python = { 'ruff' },
         javascript = { 'eslint_d' },
         typescript = { 'eslint_d' },
         javascriptreact = { 'eslint_d' },
@@ -31,7 +31,7 @@ return {
       conform.setup {
         formatters_by_ft = {
           -- Python formatting
-          python = { 'black', 'ruff' },
+          python = { 'ruff' },
           lua = { 'stylua' },
           -- TypeScript/JavaScript formatting
           javascript = { 'prettier' },
